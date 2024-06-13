@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #6eb0ec;
+    --text-dark: #111827;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+  }
+
+nav{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.main__logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.main__logo .e__logo{
+    width: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.nav__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__icons i{
+    background: #efeaee ;
+    padding: 0.4rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.contact__details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__data{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__icon i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contact__text{
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.contact__info{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+
+@media (width > 540px) {
+    .contact__details{
+      gap: 2rem;
+    }
+  
+    .contact__box{
+      gap: 1rem;
+    }
+  }
+
+  @media (width > 768px) {
+    nav{
+      padding: 2rem 1rem;
+      flex-direction: row;
+    }
+  
+    .main__logo{
+      flex: 1;
+    }
+  
+    .contact__details{
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }

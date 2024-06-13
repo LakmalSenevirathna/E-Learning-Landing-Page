@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>E-Learning Landing Page</title>
 </head>
+
 <body>
     <nav>
-        <div class="main__logo"><div class="e__logo">E</div>Learning</div>
+        <div class="main__logo">
+            <div class="e__logo">E</div>Learning
+        </div>
 
         <div class="nav__icons">
             <div class="icon"><i class="ri-twitter-fill"></i></div>
@@ -35,5 +39,35 @@
             </div>
         </div>
     </nav>
+
+    <header class="header__container">
+        <div class="header__image">
+          <img src="assets/header.jpg" alt="header" />
+        </div>
+        <div class="header__content">
+          <h1>Single Platform For All Your <span>Learning</span> Needs.</h1>
+          <p>
+            Whether you're seeking to enhance your professional skills, explore
+            new hobbies, or pursue academic interests, our comprehensive platform
+            offers diverse courses and resources tailored to support your lifelong
+            learning journey.
+          </p>
+          <form action="/">
+            <div class="input__row">
+              <div class="input__group">
+                <span><i class="ri-search-line"></i></span>
+                <input type="text" placeholder="Search for Course" />
+              </div>
+              <div class="input__group">
+                <span><i class="ri-arrow-down-s-line"></i></span>
+                <input type="text" placeholder="Categories" />
+              </div>
+            </div>
+            <button type="submit">Search Now</button>
+          </form>
+        </div>
+      </header>
+      
 </body>
+
 </html>
